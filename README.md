@@ -1,48 +1,48 @@
-Kotlin Alarm App ⏰
-A modern and reliable alarm application for Android, built natively with Kotlin. This app allows users to set alarms with custom audio files from their device, ensuring a personalized and robust user experience.
+# Kotlin Alarm App ⏰  
+A modern and reliable alarm application for Android, built natively with **Kotlin**.  
+This app allows users to set alarms with **custom audio files** from their device, ensuring a **personalized and robust experience**.
 
-Features ✨
-This app is built with a focus on core Android functionalities to deliver a seamless and intuitive alarm-setting process.
+---
 
-1. Intuitive Time Selection
-The app features a user-friendly interface for setting the alarm time.
+## ✨ Features
 
-TimePicker Integration: Utilizes the native Android TimePicker in a "spinner" mode for quick and easy time selection.
+### **1. Intuitive Time Selection**  
+- **TimePicker Integration** – Uses Android’s native `TimePicker` in **spinner mode** for quick and easy time selection.  
+- **Calendar API** – Ensures precise scheduling of alarms using the `Calendar` class.
 
-Calendar API: The selected time is processed using the Calendar API to ensure the alarm is scheduled with precision for the correct date and time.
+---
 
-2. Custom Audio Selection
-Users can personalize their alarms by choosing any sound from their device's local storage.
+### **2. Custom Audio Selection**  
+- **Personalized Alarm Sounds** – Choose any sound from the device’s local storage.  
+- **Storage Access Framework** – Securely browse and select audio files without requiring unnecessary storage permissions.  
+- **URI Handling** – Properly manages the content URI to ensure smooth playback when the alarm rings.
 
-Storage Access Framework: Securely browses and selects audio files without requiring broad storage permissions.
+---
 
-URI Handling: The app correctly handles the content URI of the selected file, making it available for playback when the alarm fires.
+### **3. Reliable Audio Playback**  
+- **MediaPlayer** – Plays the user’s chosen audio file when the alarm is triggered.  
+- **Looping Audio** – The alarm sound loops until the user dismisses it.  
+- **Background Service** – Ensures the alarm works reliably even if the app is closed.
 
-3. Reliable Audio Playback
-The app uses the MediaPlayer class to manage audio playback effectively.
+---
 
-MediaPlayer Implementation: When the alarm triggers, an instance of MediaPlayer is created to play the user's chosen audio file.
+## 🛠 Technologies Used
+- **Language:** Kotlin  
+- **UI Components:** `TimePicker`, `MaterialCardView`, `MaterialButton`  
+- **Core APIs:** `AlarmManager`, `MediaPlayer`, `Calendar`, `ContentResolver`  
 
-Looping Audio: The player is configured to loop the alarm sound, ensuring the user wakes up. The playback is managed within a Service to run reliably in the background.
+---
 
-Technologies Used 🛠️
-Language: Kotlin
+## 🚀 How to Use
+1. Clone this repository.  
+2. Open the project in **Android Studio**.  
+3. Build and run it on an **emulator or physical device**.  
+4. Set a time, select an audio file, and tap **"Set Alarm"!**
 
-UI Components: TimePicker, MaterialCardView, MaterialButton
+---
 
-Core APIs: AlarmManager, MediaPlayer, Calendar, ContentResolver
-
-Architecture: Activity, Service, BroadcastReceiver
-
-How To Use
-Clone the repository.
-
-Open the project in Android Studio.
-
-Build the project and run it on an Android emulator or a physical device.
-
-Set a time, select an audio file, and click "Set Alarm"!
-
-![WhatsApp Image 2025-07-19 at 12 38 12_093eb1ad](https://github.com/user-attachments/assets/30443f7a-ebfc-4ecc-ab31-391faad0637f)
-
-![WhatsApp Image 2025-07-19 at 12 38 12_e93b045f](https://github.com/user-attachments/assets/7f5d118c-d742-4641-8942-8741d3cba063)
+## 📸 Screenshots
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/30443f7a-ebfc-4ecc-ab31-391faad0637f" width="300" style="margin: 10px;">
+  <img src="https://github.com/user-attachments/assets/7f5d118c-d742-4641-8942-8741d3cba063" width="300" style="margin: 10px;">
+</p>
