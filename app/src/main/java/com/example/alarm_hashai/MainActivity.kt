@@ -69,9 +69,9 @@ class MainActivity : AppCompatActivity() {
     private fun setAlarm() {
         val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
 
-        // Check for exact alarm permission
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && !alarmManager.canScheduleExactAlarms()) {
-            // Guide user to settings to grant permission
+
             Intent().also { intent ->
                 intent.action = Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM
                 startActivity(intent)
@@ -87,14 +87,14 @@ class MainActivity : AppCompatActivity() {
             set(Calendar.SECOND, 0)
             set(Calendar.MILLISECOND, 0)
 
-            // If the time is in the past, set it for the next day
+
             if (before(Calendar.getInstance())) {
                 add(Calendar.DATE, 1)
             }
         }
 
         val intent = Intent(this, AlarmReceiver::class.java).apply {
-            // Pass the URI as a string, as URIs can be complex objects
+
             putExtra("AUDIO_URI", selectedAudioUri.toString())
         }
 
@@ -105,7 +105,7 @@ class MainActivity : AppCompatActivity() {
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
 
-        // Set the exact alarm
+
         alarmManager.setExactAndAllowWhileIdle(
             AlarmManager.RTC_WAKEUP,
             calendar.timeInMillis,
