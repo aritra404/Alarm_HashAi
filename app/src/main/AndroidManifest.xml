@@ -44,6 +44,8 @@
             android:showWhenLocked="true"
 
             />
+
+        <activity android:name=".AlarmsListActivity"></activity>
     </application>
 
 </manifest>

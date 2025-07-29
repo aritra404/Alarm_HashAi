@@ -77,6 +77,25 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnViewAlarms"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="View All Alarms"
+        android:textSize="16sp"
+        android:textColor="#3A506B"
+        app:cornerRadius="16dp"
+        app:strokeColor="#3A506B"
+        app:strokeWidth="2dp"
+        app:iconTint="#3A506B"
+        app:layout_constraintBottom_toTopOf="@id/btnSetAlarm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSetAlarm"
         android:layout_width="0dp"
         android:layout_height="60dp"
