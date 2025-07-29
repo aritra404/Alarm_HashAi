@@ -1,4 +1,4 @@
-# Kotlin Alarm App ⏰  
+# Java Alarm App ⏰  
 A modern and reliable alarm application for Android, built natively with **Kotlin**.  
 This app allows users to set alarms with **custom audio files** from their device, ensuring a **personalized and robust experience**.
 
@@ -27,7 +27,7 @@ This app allows users to set alarms with **custom audio files** from their devic
 ---
 
 ## 🛠 Technologies Used
-- **Language:** Kotlin  
+- **Language:** Java  
 - **UI Components:** `TimePicker`, `MaterialCardView`, `MaterialButton`  
 - **Core APIs:** `AlarmManager`, `MediaPlayer`, `Calendar`, `ContentResolver`  
 
